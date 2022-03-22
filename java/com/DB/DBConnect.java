@@ -9,7 +9,8 @@ public class DBConnect {
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/youtube?useSSL=false","root","Pavi2601@");
+			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/pavipastry","root","Pavi2601@");
+			
 			
 			
 			

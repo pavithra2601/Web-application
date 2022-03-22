@@ -1,77 +1,90 @@
 package com.entity;
 
 public class  ItemDetails {
-	private int ItemId;
-	private String ItemName;
-	private String price;
-	private String status;
-	private String photoName;
+	private int Id;
+	private String Name;
+	private String password;
 	private String email;
-	private String ItemCategory;
-	
+	private String phno;
+	private String address;
+	private String landmark;
+	private String city;
+	private String state;
+	private String pincode;
 	
 	
 	public ItemDetails() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public ItemDetails(String itemName, String price, String status, String photoName, String email, String ItemCategory) {
-		super();
-		
-		ItemName = itemName;
-		this.price = price;
-		this.status = status;
-		this.photoName = photoName;
-		this.email = email;
-		this.ItemCategory=ItemCategory;
+	public int getId() {
+		return Id;
 	}
-	public int getItemId() {
-		return ItemId;
+	public void setId(int id) {
+		Id = id;
 	}
-	public void setItemId(int itemId) {
-		ItemId = itemId;
+	public String getName() {
+		return Name;
 	}
-	public String getItemName() {
-		return ItemName;
+	public void setName(String name) {
+		Name = name;
 	}
-	public void setItemName(String itemName) {
-		ItemName = itemName;
-	}
-	public String getPrice() {
-		return price;
-	}
-	public void setPrice(String price) {
-		this.price = price;
-	}
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
-	}
-	public String getPhotoName() {
-		return photoName;
-	}
-	public void setPhotoName(String photoName) {
-		this.photoName = photoName;
-	}
-	public String getEmail() {
+	public String getemail() {
 		return email;
+		
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setemail(String Email) {
+		email=email;
 	}
-	public String getItemCategory() {
-		return ItemCategory;
+	public String getPassword() {
+		return password;
 	}
-	public void setItemCategory(String itemCategory) {
-		ItemCategory = itemCategory;
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getPhno() {
+		return phno;
+	}
+	public void setPhno(String phno) {
+		this.phno = phno;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getLandmark() {
+		return landmark;
+	}
+	public void setLandmark(String landmark) {
+		this.landmark = landmark;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
+	public String getPincode() {
+		return pincode;
+	}
+	public void setPincode(String pincode) {
+		this.pincode = pincode;
 	}
 	@Override
 	public String toString() {
-		return "ItemDetails [ItemId=" + ItemId + ", ItemName=" + ItemName + ", price=" + price + ", status=" + status
-				+ ", photoName=" + photoName + ", email=" + email + ", ItemCategory=" + ItemCategory + "]";
+		return "ItemDetails [Id=" + Id + ", Name=" + Name + ", password=" + password + "Email="+email+", phno=" + phno + ", address="
+				+ address + ", landmark=" + landmark + ", city=" + city + ", state=" + state + ", pincode=" + pincode
+				+ "]";
 	}
+	
 	
 	
 	
